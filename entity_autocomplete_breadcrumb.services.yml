@@ -1,0 +1,10 @@
+services:
+
+  entity_autocomplete_breadcrumb.route_subscriber:
+    class: Drupal\entity_autocomplete_breadcrumb\Routing\AutocompleteRouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  entity_autocomplete_breadcrumb.autocomplete_matcher:
+    class: Drupal\entity_autocomplete_breadcrumb\EntityAutocompleteMatcher
+    arguments: ['@plugin.manager.entity_reference_selection']

@@ -1,0 +1,7 @@
+name: 'Entity Autocomplete Breadcrumb'
+type: module
+description: 'This modules alter the entity autocomplete field of taxonomy terms to show your hierarchy.'
+package: Entity Autocomplete Breadcrumb
+
+version: VERSION
+core: '8.x'
